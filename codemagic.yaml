@@ -1,4 +1,3 @@
-
 workflows:
   android-release:
     name: Build Android APK
@@ -12,4 +11,5 @@ workflows:
       - ./gradlew clean
       - ./gradlew assembleRelease
     artifacts:
-      - app/build/outputs/apk/release/app-release.apk
+      - app/build/outputs/**/*.apk
+      
